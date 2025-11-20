@@ -1,0 +1,5 @@
+com\mycompany\_virginiah_server\App.class
+com\mycompany\_virginiah_server\EventBoard.class
+com\mycompany\_virginiah_server\InvalidCommandException.class
+com\mycompany\_virginiah_server\ClientHandler.class
+com\mycompany\_virginiah_server\Event.class
