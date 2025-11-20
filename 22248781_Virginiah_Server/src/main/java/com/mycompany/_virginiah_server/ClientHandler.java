@@ -115,7 +115,7 @@ public class ClientHandler implements Runnable{
         Matcher matcher = pattern.matcher(inputDate.trim());
 
         if (!matcher.matches()) {
-            throw new InvalidCommandException("Date format must be 'dd Month yyyy' (e.g., 2 Nov 2024)");
+            throw new InvalidCommandException("Wrong date. Date format must be 'dd Month yyyy' (e.g., 2 Nov 2024)");
         }
 
         String day = matcher.group(1);
@@ -161,7 +161,7 @@ public class ClientHandler implements Runnable{
 
         Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         if (!pattern.matcher(time.trim()).matches()) {
-            throw new InvalidCommandException("Time must be 12hr format (e.g., '6 pm' or '7.30 pm')");
+            throw new InvalidCommandException("Wrong time format. Time must be 12hr format (e.g., '6 pm' or '7.30 pm')");
         }
     }
 }
