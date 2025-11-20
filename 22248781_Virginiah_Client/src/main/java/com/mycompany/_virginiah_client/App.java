@@ -28,7 +28,7 @@ public class App {
             BufferedReader userEntry = new BufferedReader(new InputStreamReader(System.in))) {
 
             System.out.println("Connected to Event Board Server" + "\n");
-            System.out.println("Enter commands (add/remove/list) for events:");
+            System.out.println("Enter commands (add/remove/list) for events:" + "\n");
             System.out.println("Type 'STOP' to exit, or 'import; URL' to load events.");
 
             String message, response;

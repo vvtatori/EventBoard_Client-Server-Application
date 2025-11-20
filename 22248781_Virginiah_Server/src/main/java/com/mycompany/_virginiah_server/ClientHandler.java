@@ -85,6 +85,7 @@ public class ClientHandler implements Runnable{
 //                if(!time.contains("am") && !time.contains("pm")){
 //                    throw new InvalidCommandException("Time must include am or pm");
 //                }
+                //changing the date validation to implement normalizeDate()
                 validateTime(time);
                 return board.addEvent(date, time, description);
                 
